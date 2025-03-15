@@ -1,0 +1,229 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin-top: 60px; /* Ensures content doesn't overlap with fixed topbar */
+}
+
+/* Topbar Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero button {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Services Section */
+.services {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.services .service {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.services .service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.services h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.services p {
+    font-size: 1rem;
+}
+
+/* Donation Section */
+.donate {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.donate .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.donate h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.donate form {
+    display: flex;
+    flex-direction: column;
+}
+
+.donate input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.donate button {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: #f39c12;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero button {
+        font-size: 16px;
+    }
+
+    .services .service {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
